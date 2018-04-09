@@ -2,7 +2,7 @@ spring:
   profiles: dev
 nginx:
   server:
-    name: ${spring.profiles}.example.com
+    name: ${spring.profiles}.cool.example.com
 ---
 spring:
   profiles: test
