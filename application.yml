@@ -3,8 +3,8 @@ spring:
 api:
   url: 
     base: https://dev.itservices.hawaiianairlines.com
-    process.pss.passengers.host: ${apis.baseUrl}/proc-pss-passengers
-    process.pss.flights.host: ${apis.baseUrl}/proc-pss-flights
+    process.pss.passengers.host: ${api.url.base}/proc-pss-passengers
+    process.pss.flights.host: ${api.url.base}/proc-pss-flights
 ---
 spring:
   profiles: test
