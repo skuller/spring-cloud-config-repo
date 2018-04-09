@@ -12,6 +12,14 @@ api:
 ---
 spring:
   profiles: test
-nginx:
-  server:
-    name: test.example.com
+api:
+  url:
+    process.pss.passengers.host: ${api.base}/proc-pss-passengers
+    process.pss.flights.host: ${api.base}/proc-pss-flights
+---
+spring:
+  profiles: prod
+api:
+  url:
+    process.pss.passengers.host: ${api.base}/proc-pss-passengers
+    process.pss.flights.host: ${api.base}/proc-pss-flights
