@@ -1,3 +1,11 @@
-another:
-  global:
-    config: 'inside config/'
+spring:
+  profiles: dev
+nginx:
+  server:
+    name: dev.example.com
+---
+spring:
+  profiles: test
+nginx:
+  server:
+    name: test.example.com
