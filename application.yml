@@ -1,3 +1,11 @@
-some:
-  global:
-    value: 'global works!'
+spring:
+  profiles: dev
+nginx:
+  server:
+    name: dev.example.com
+---
+spring:
+  profiles: test
+nginx:
+  server:
+    name: test.example.com
