@@ -1,0 +1,3 @@
+some:
+  global:
+    value: 'global works!'
