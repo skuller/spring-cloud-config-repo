@@ -1,9 +1,15 @@
+api:
+  url:
+    protocol: HTTPS
+    port: 443
+    base: ${spring.profiles}.itservices.hawaiianairlines.com
+---
 spring:
   profiles: dev
 api:
-  url: 
-    base: https://dev.itservices.hawaiianairlines.com
-    process.pss.passengers.host: ${api.url.base}/proc-pss-passengers
+  url:
+    process.pss.passengers:
+      host: ${api.url.base}/proc-pss-passengers
     process.pss.flights.host: ${api.url.base}/proc-pss-flights
 ---
 spring:
