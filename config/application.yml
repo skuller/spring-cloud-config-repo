@@ -1,0 +1,3 @@
+another:
+  global:
+    config: 'inside config/'
