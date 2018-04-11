@@ -2,25 +2,25 @@
 api:
   protocol: "HTTPS"
   port: 443
-  base: "${spring.profiles}.itservices.hawaiianairlines.com"
+  host: "${spring.profiles}.itservices.hawaiianairlines.com"
 ---
 spring:
   profiles: "dev"
 api:
   url:
-    process.pss.passengers.host: "${api.base}/proc-pss-passengers"
-    process.pss.flights.host: "${api.base}/proc-pss-flights"
+    process.pss.passengers.host: "${api.host}/proc-pss-passengers"
+    process.pss.flights.host: "${api.host}/proc-pss-flights"
 ---
 spring:
   profiles: "test"
 api:
   url:
-    process.pss.passengers.host: "${api.base}/proc-pss-passengers"
-    process.pss.flights.host: "${api.base}/proc-pss-flights"
+    process.pss.passengers.host: "${api.host}/proc-pss-passengers"
+    process.pss.flights.host: "${api.host}/proc-pss-flights"
 ---
 spring:
   profiles: "prod"
 api:
   url:
-    process.pss.passengers.host: "${api.base}/proc-pss-passengers"
-    process.pss.flights.host: "${api.base}/proc-pss-flights"
+    process.pss.passengers.host: "${api.host}/proc-pss-passengers"
+    process.pss.flights.host: "${api.host}/proc-pss-flights"
