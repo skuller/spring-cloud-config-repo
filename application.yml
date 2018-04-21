@@ -3,9 +3,16 @@ api:
   protocol: "HTTPS"
   port: 443
   host: "${spring.profiles}.itservices.hawaiianairlines.com"
+  connection.idle.timeout: 30000
+  response.timeout: 30000
 ---
 spring:
   profiles: "dev"
+json:
+  logger:
+    mq:
+      clientAppId: "dbd44f20990842f08aef6940c6cd2e26"
+      clientSecret: "SOME_ENCRYPED_VALUE"
 api:
   url:
     ha.sys.ods.logs.base: "/ha-sys-ods-logs/api"
@@ -62,6 +69,11 @@ api:
 ---
 spring:
   profiles: "test"
+json:
+  logger:
+    mq:
+      clientAppId: "dbd44f20990842f08aef6940c6cd2e26"
+      clientSecret: "SOME_ENCRYPED_VALUE"
 api:
   url:
     process.users.api.test.base: "/process-users-api-test/api"
@@ -89,6 +101,11 @@ api:
 ---
 spring:
   profiles: "prod"
+json:
+  logger:
+    mq:
+      clientAppId: "dbd44f20990842f08aef6940c6cd2e26"
+      clientSecret: "SOME_ENCRYPED_VALUE"
 api:
   url:
     ha.net.tool.base: "/ha-net-tool/api"
