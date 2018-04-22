@@ -1,10 +1,11 @@
 ---
 api:
-  protocol: "HTTPS"
-  port: 443
-  host: "${spring.profiles}.itservices.hawaiianairlines.com"
-  connection.idle.timeout: 30000
-  response.timeout: 30000
+  global:
+    protocol: "HTTPS"
+    port: 443
+    host: "${spring.profiles}.itservices.hawaiianairlines.com"
+    connection.idle.timeout: 30000
+    response.timeout: 30000
 ---
 spring:
   profiles: "dev"
