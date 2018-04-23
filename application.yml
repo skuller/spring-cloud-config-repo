@@ -13,7 +13,7 @@ json:
   logger:
     mq:
       clientAppId: "dbd44f20990842f08aef6940c6cd2e26"
-      clientSecret: "SOME_ENCRYPED_VALUE"
+      clientSecret: "![IgeyCURQL8E/TK8thhRreKgVCx/viSD1QASM/5A1VYmXCuYyUB84WzPLljuQRz+2]"
 api:
   endpoint:
     api.manager.exp.base: "/api-manager-exp/api"
